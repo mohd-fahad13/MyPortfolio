@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'poppins', sans-serif; 
+  
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    width: 100%;
+    
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width:88vw;
+    margin-inline: auto;
+}
+.logo {
+  font-size: 1.4rem;
+   
+    z-index: 1.5;
+    color: white;
+    
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 10px;
+   
+    position: relative;
+    
+  
+}
+.nav-links{
+    margin-left: 35vw;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+    
+}
+ul{
+    gap: 30px;
+    font-size: 1.3rem;
+}
+ul li{
+    list-style: none;
+}
+.nav-toogles{
+    display: none;
+    
+}
+
+.L-scale{
+    transition: 0.3s ease-in;
+}
+.L-scale:hover
+{
+    scale: 1.1;
+}
+.hover-link:hover{
+    scale: 1.4;
+    transition: 0.1s ease-in;
+    color: rgb(103, 103, 232);
+}
+/*  
+nav ul{
+    display: flex;
+    justify-content: center;  
+}
+.main-nav{
+    display: relative;
+}
+nav ul li{
+    list-style: none;
+    margin: 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+*/
+
+
+/*.left{
+    font-size: 1.5rem;
+}*/
+.firstsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    font-size: 2.8rem;
+    margin-inline: auto;
+}
+
+
+.leftsection{
+    
+    margin: 30px 0;
+    animation-delay: 0.5s;
+    width: 33vw;
+   
+}
+.firstdiv.anim{
+    animation-delay: 1s;
+}
+.rightsection{
+    margin: 30px;
+    width: 44vw;
+}
+.rightsection img{
+    width: 43vw ;
+    border-radius: 20px;
+}
+.rightsection.anim{
+    animation-delay: 1.5s;
+}
+.glow{
+    background-size: cover;
+    box-shadow: -25px -25px 30px rgba(106, 233, 148, 0.628),20px 20px 30px rgba(171, 154, 245, 0.628);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+       
+}
+.green{
+    color: rgb(30, 201, 150);
+}
+#element{
+    color: rgb(30, 201, 150);
+}
+main hr{
+    border: 0;
+    background: #504d92;
+    height: 1.2px;
+    margin: 45px 60px;
+    
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.secondsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.aboutimg{
+    width: 44vw;
+}
+ .aboutimg img{
+    width: 43vw;
+    border-radius: 20px;
+ }
+.secondsection h1{
+   margin-top: 5px;
+ 
+    font-size: 2.4rem;    
+}
+.aboutbox{
+    border-radius: 20px;
+    background-color:  rgb(12, 12, 64);
+    width: 44vw;
+    
+    
+    transition: background 0.5s, transform 0.5s;
+    
+    text-align: center;
+    
+}
+.aboutdata{
+  
+    
+    overflow: hidden;
+    width: 42vw;
+    text-align: center;
+    font-size: 2rem;
+    padding: 4px;
+}
+.aboutbox:hover{
+    background-color: rgb(30, 180, 135);
+    color: black;
+    transform: translateY(-10px);
+}
+.thirdsection img{
+   
+}
+.thirdsection h1{
+    margin: 25px 35px; 
+    border: 10px;
+    font-size: 2rem;       
+}
+
+/* .skillboxes{
+    display: flex;
+} */
+
+
+.skillbox1{
+    margin: 12vh 15vw;
+    background-color:  rgb(12, 12, 64);
+    padding: 30px;
+    border-radius: 22px;
+    transition: transform 0.5s;
+}
+.skillbox1:hover{
+    background-color: rgb(30, 201, 150);;
+    transform: translateY(-10px);
+}
+.skillboximg{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.skillboximg img{
+    width: 100px;
+}
+.fourthsection h1{
+    margin: 50px 80px;
+    font-size: 2rem;
+}
+.nav-links.active{
+    transition: 0.3s ease-in-out;
+    left: 0;
+    background-color:rgb(30, 201, 150) ;
+    border-radius: 25px;
+    box-shadow:8px 8px 12px rgb(126, 245, 209);
+    margin-top:8px;
+    border:1px outset black;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects img{
+    width:30%;
+    border-radius: 15px;
+}
+@media  screen and (max-width:1190px) {
+    .nav-links{
+        margin-left: 20vw;
+    }
+    
+}
+  
+@media screen and (max-width:960px) {           /* yaha per humne media query add ki take jab screen 960px pe ho to  jo isme code hai wo hojae*/
+    .nav-toogles{
+        display: block;
+        font-size: 1.3rem;
+        margin-left: 60vw;
+    }
+ .logo h2{
+    font-size: 1.4rem;
+ }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -200%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        
+        
+       
+    }
+    .nav-links.active{
+        transition: 0.3s ease-in-out;
+        left:38%;
+        background-color: rgb(30, 201, 150);
+        border-radius: 25px;
+        box-shadow:8px 8px 12px black;
+        margin-top:8px;
+        border:1px outset black;
+        z-index: 10;
+        width: 33%;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        
+    }
+  
+    .main-nav{
+        overflow: initial;
+    }
+    .firstsection{
+        font-size: 2rem;
+    }
+    .aboutdata{
+        
+        width: 43vw;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+    .skillboximg img{
+        width: 70px;
+    }
+  
+    
+   
+    
+}
+
+@media screen and (max-width:480px) {
+    .nav-toogles{
+        
+        margin-left: 53vw;
+    }
+    .rightsection{
+        width: 52vw;
+    }
+    .rightsection img{
+        width: 46vw;
+    }
+    .nav-links.active{
+        width: 80%;
+        left: -22%;
+        margin-top: 12px;
+    }
+    
+    .firstsection{
+        font-size: 1.5rem;
+    }
+    .aboutdata{
+        
+        width: 43vw;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 2px;
+        height: 220px;
+    }
+    .secondsection h1{
+        font-size: 1rem;
+    }
+    .skillboximg img{
+        width: 60px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="portstyle.css">
+    <title>My portfolio</title>
+    
+</head>
+
+<body>
+  
+       <!-- <nav>
+            <div class="main-nav">
+                <div class="left">Fahad's portfolio</div>
+            
+            <ul class="nav-links" id="nav-links">--> <!-- yaha nav-links class add ki hai take humburger laga sake -->
+               <!-- <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Skill's</a></li>
+                <li><a href="/">Project's</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-toogles" ><a href="" class="hover-link" id="nav-toggles" ><i class="fa-solid fa-bars" style="color: #000000;"></i></a></div>
+     </div>
+            </div>
+            
+        </nav> -->
+        <nav >
+            <div class="container main-nav flex" id="nav">  <!-- yaha humne container aur flex class add ki ye utility class hai, is pure div ka naam main-nav hai-->
+             <div class="company-logo">
+                <a href="#nav" class="logo"><h2>Fahad's Portfolio</h2></a>
+             </div> 
+               <div class="nav-links" id="nav-links">
+                <ul class="flex"> <!--flex class bana li hai bajae ike ke her jaggha flex de class bana lo aur jaha dena waha class dedo-->
+                  <li class="L-scale"><a href="#" class="hover-link">Home</a></li> <!--hove-links css class lagae hai ke jab hover ho to kya ho-->
+                  <li class="L-scale"><a href="#" class="hover-link">About</a></li>
+                  <li class="L-scale"><a href="#" class="hover-link">Skills</a></li>
+                  <li class="L-scale"><a href="#" class="hover-link">Projects</a></li>
+                  <li class="L-scale"><a href="" class="hover-link">Contact us</a></li>
+                </ul>
+                
+               </div>
+               <div class="nav-toogles" ><a href="" class="hover-link" id="nav-toggles" ><i class="fa-solid fa-bars" style="color: white;"></i></a></div>
+            </div>
+          </nav>
+    
+    <main>
+        <section class="firstsection container">
+            <div  class="leftsection container">
+                <h4 class="anim">Hi, My name is<span class="green"> Fahad</span></h4>
+                <div class="firstdiv anim">and I am a passianate
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightsection anim">
+                <img src="hom.png" alt=" my photo">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection container">
+            <div class="aboutimg">
+                <img src="ab.png" alt="About image">
+            </div>
+            
+            <div class=" aboutbox">
+                
+                    <h1>About</h1>
+                
+                <div class="aboutdata">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam
+                        labore unde dolore similique dicta molestiae libero, provident sapiente
+                        consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, facilis. Lorem
+                        ipsum dolor sit amet consectetur, adipisicing elit. Dolor, et!</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection container" >
+            <div class="skill">
+                <img src="skill.png" alt="Skill image">                
+                 
+                    <h1>Skill's</h1>
+                    <h1>Web Development and Programming Language</h1>
+                
+            
+            <div class="skillboxes">    
+                <div class="skillbox1">
+                    <div class="skillboximg"> <!--skills img  isko responsive banane ke liye isme flexwrap daldenge css me -->
+                        <img src="html-5.png" alt="html">
+                        <img src="css-3.png" alt="css">
+                        <img src="js.png" alt="javascript">
+                        <img src="bootstrap.png" alt="Bootstrap">
+                        <img src="c .png" alt="c">
+                        <img src="c++.png" alt="c++">
+                        <img src="python.png" alt="PYTHON">
+                        <img src="java.png" alt="JAVA">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <hr>
+        <section class="fourthsection container">
+            <h1>Project's</h1>
+            <div class="projects">  <!--ye project ke liye hai isme hum flex wrap use karenge css me jaise skill me use kara hai-->
+                <img src="land.jpg" alt="landing page">
+                <img src="caculator.jpg" alt="calculator">
+                <img src="cooling.jpg" alt="cooling center"></div>
+         
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Data Analytics', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
